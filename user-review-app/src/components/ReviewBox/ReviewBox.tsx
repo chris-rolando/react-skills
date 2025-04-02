@@ -9,7 +9,7 @@ interface ReviewBoxProps {
   review: Review;
 }
 
-export const ReviewBox = ({ review }:ReviewBoxProps) => {
+export const ReviewBox = ({ review }: ReviewBoxProps) => {
   return (
     <>
       <div className={styles["review-container"]}>

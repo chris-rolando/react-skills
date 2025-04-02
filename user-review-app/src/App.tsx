@@ -1,4 +1,4 @@
-import {ReviewBox} from "./components/ReviewBox.tsx";
+import {ReviewBox} from "./components/ReviewBox/ReviewBox.tsx";
 import { Title } from "./components/Title/Title.tsx";
 import "./App.css";
 
