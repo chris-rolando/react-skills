@@ -27,13 +27,27 @@
   border: 2px solid #ddd;
 }
 
+.review-author {
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+}
+
+.review-rating {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.star-filled {
+  color: #ffd700; /* Color dorado para estrellas llenas */
+}
+
+.star-empty {
+  color: #ddd; /* Color gris para estrellas vacías */
+}
+
 .review-text {
   font-style: italic;
   color: #555;
   margin: 10px 0;
-}
-
-.review-author {
-  font-weight: bold;
-  color: #333;
 }
