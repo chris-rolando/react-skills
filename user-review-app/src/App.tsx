@@ -6,6 +6,7 @@ export const App = () => {
   const review = {
     text: "El servicio de esta empresa es excepcional. ¡Muy recomendado!",
     author: "Juan Pérez",
+    avatar: "/images/avatar.webp", // Ruta de la imagen optimizada
   };
 
   return (
