@@ -1,31 +1,31 @@
 import { useState } from "react";
-import { Btn } from "./components/Btn/Btn.jsx";
+import { Button } from "./components/Button/Button.jsx";
 import { Counter } from "./components/Counter/Counter.jsx";
 import { Title } from "./components/Title/Title.jsx";
 import "./App.css";
 
 export const App = () => {
-  const [counterClic, setCounterClic] = useState(0);
+  const [clickCount, setClickCount] = useState(0);
 
-  const addCounter = () => {
-    setCounterClic(counterClic + 1);
+  const incrementCount = () => {
+    setClickCount(clickCount + 1);
   };
 
-  const subtractCounter = () => {
-    setCounterClic(counterClic - 1);
+  const decrementCount = () => {
+    setClickCount(clickCount - 1);
   };
 
-  const restartCounter = () => {
-    setCounterClic(0);
+  const resetCount = () => {
+    setClickCount(0);
   };
 
   return (
     <div className="App">
-      <Title />
-      <Counter value={counterClic} />
-      <Btn texto="+1" esBtnClick={true} manejarClic={addCounter} />
-      <Btn texto="-1" esBtnClick={true} manejarClic={subtractCounter} />
-      <Btn texto="Reiniciar" esBtnClick={false} manejarClic={restartCounter} />
+      <Title text="Counter App"/>
+      <Counter value={clickCount} />
+      <Button text="+1" isClickButton={true} handleClick={incrementCount} />
+      <Button text="-1" isClickButton={true} handleClick={decrementCount} />
+      <Button text="Reset" isClickButton={false} handleClick={resetCount} />
     </div>
   );
 };

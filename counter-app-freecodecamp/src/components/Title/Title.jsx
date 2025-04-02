@@ -1,14 +1,16 @@
 import PropTypes from "prop-types";
 import styles from "./title.module.css";
 
-export const Title = ({ value }) => {
-  return <h1 className={styles["app-title"]}>{value}</h1>; // Agrega una clase para estilos locales
+export const Title = ({ text, styleOverride }) => {
+  return <h1 className={`${styles["app-title"]} ${styleOverride}`}>{text}</h1>;
 };
 
 Title.propTypes = {
-  value: PropTypes.string,
+  text: PropTypes.string,
+  styleOverride: PropTypes.string,
 };
 
 Title.defaultProps = {
-  value: "Counter App",
+  text: "Counter App",
+  styleOverride: "",
 };
