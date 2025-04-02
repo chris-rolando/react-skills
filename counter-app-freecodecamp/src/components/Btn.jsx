@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import '../styles/btn.css';
+import PropTypes from "prop-types";
+import "../styles/btn.css";
 
 export function Btn({ texto, esBtnClick, manejarClic }) {
   return (

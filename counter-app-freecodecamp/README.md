@@ -1,12 +1,33 @@
-# React + Vite
+# Counter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta es una aplicación simple de contador de clics que le permite a los usuarios incrementar, decrementar y reiniciar el contador.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Incrementar:** Incrementa el contador en 1.
+- **Decrementar:** Decrementa el contador en 1.
+- **Reiniciar:** Reinicia el contador a 0.
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React:** Para la construcción de la interfaz de usuario.
+
+## Conceptos aplicados
+
+**Componentes:** La aplicación está construida utilizando componentes React reutilizables como `Btn`, `Counter` y `Title`.
+
+**Props:** Los componentes reciben datos a través de props.
+
+**Hooks:** Se utiliza el hook `useState` para gestionar el estado del componente `App`. 
+
+**Eventos:** Los componentes `Btn` utilizan el evento `onClick` para llamar a las funciones que modifican el estado del contador. 
+
+**PropTypes:** Se utiliza la librería `prop-types` para validar los tipos de props que reciben los componentes. Esto ayuda a prevenir errores y a mejorar la mantenibilidad del código.
+
+## Contribución
+
+Las contribuciones son bienvenidas. Si encuentras un error o tienes una sugerencia, por favor abre un issue o envía un pull request.
+
+## Autor
+
+Chris-Rolando
