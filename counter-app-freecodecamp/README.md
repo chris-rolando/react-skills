@@ -33,10 +33,8 @@ Las contribuciones son bienvenidas. Si encuentras un error o tienes una sugerenc
 ## Instalación
 
 1.  Clona el repositorio desde GitHub:
-
-    ```bash
-    git clone [https://github.com/chris-rolando/react-skills.git](https://github.com/chris-rolando/react-skills.git)
-    ```
+ 
+    [https://github.com/chris-rolando/react-skills.git](https://github.com/chris-rolando/react-skills.git) 
 
 2.  Navega al directorio del proyecto:
 
