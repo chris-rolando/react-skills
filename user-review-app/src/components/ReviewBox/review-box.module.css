@@ -12,17 +12,10 @@
   align-items: center;
 }
 
-.review-text {
-  font-style: italic;
-  color: #555;
-  margin: 10px 0;
-}
-
-.review-author {
-  text-align: right;
-  font-weight: bold;
-  color: #333;
-  margin-top: 10px;
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .review-avatar {
@@ -30,6 +23,17 @@
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin-right: 10px;
   border: 2px solid #ddd;
+}
+
+.review-text {
+  font-style: italic;
+  color: #555;
+  margin: 10px 0;
+}
+
+.review-author {
+  font-weight: bold;
+  color: #333;
 }
