@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
-import "../styles/title.css";
+import styles from "./title.module.css";
 
 export const Title = ({ value }) => {
-  return <h1 className="app-title">{value}</h1>; // Agrega una clase para estilos locales
+  return <h1 className={styles["app-title"]}>{value}</h1>; // Agrega una clase para estilos locales
 };
 
 Title.propTypes = {

@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
-import "../styles/counter.css";
+import styles from "./counter.module.css";
 
 export const Counter = ({ value }) => {
-  return <p>{value}</p>;
+  return <p className={styles["counter-value"]}>{value}</p>;
 };
 
 Counter.propTypes = {

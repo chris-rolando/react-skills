@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
-import "../styles/btn.css";
+import styles from "./btn.module.css";
 
 export function Btn({ texto, esBtnClick, manejarClic }) {
   return (
     <button
-      className={esBtnClick ? "boton-clic" : "boton-reiniciar"}
+      className={esBtnClick ? styles["boton-clic"] : styles["boton-reiniciar"]}
       onClick={manejarClic}
     >
       {texto}

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Btn } from "./components/Btn.jsx";
-import { Counter } from "./components/Counter.jsx";
-import { Title } from "./components/Title.jsx";
+import { Btn } from "./components/Btn/Btn.jsx";
+import { Counter } from "./components/Counter/Counter.jsx";
+import { Title } from "./components/Title/Title.jsx";
 import "./App.css";
 
 export const App = () => {
