@@ -13,14 +13,18 @@ interface ReviewBoxProps {
   review: Review;
 }
 
-export const ReviewBox = ({ review }: ReviewBoxProps) => {
-  const stars = Array.from({ length: 5 }, (_, index) => (
+const generateStars = (rating: number | undefined) => {
+  return Array.from({ length: 5 }, (_, index) => (
     <FontAwesomeIcon
       key={index}
       icon={faStar}
-      className={index < (review.rating ?? 0) ? styles["star-filled"] : styles["star-empty"]}
+      className={index < (rating ?? 0) ? styles["star-filled"] : styles["star-empty"]}
     />
   ));
+};
+
+export const ReviewBox = ({ review }: ReviewBoxProps) => {
+  const stars = generateStars(review.rating);
 
   return (
     <div className={styles["review-container"]}>
