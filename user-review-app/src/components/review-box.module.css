@@ -1,0 +1,21 @@
+/* review-box.module.css */
+
+.review-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+  font-style: italic;
+  color: #555;
+}
+
+.review-author {
+  text-align: right;
+  font-weight: bold;
+  color: #333;
+}
