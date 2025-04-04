@@ -1,7 +1,10 @@
 import { useState, ChangeEvent, FormEvent } from "react";
-import "../styles/Input.css";
 
-export const Input = () => {
+interface AddTaskProps {
+  addTask: (task: string) => void;
+}
+
+export const AddTask = ({ addTask }: AddTaskProps) => {
   const [inputValue, setInputValue] = useState<string>("");
 
   const onInputChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -10,6 +13,9 @@ export const Input = () => {
 
   const onSubmit = (event: FormEvent) => {
     event.preventDefault();
+    addTask(inputValue);
+    console.log(inputValue);
+    setInputValue("");
   };
 
   return (
@@ -17,7 +23,7 @@ export const Input = () => {
       <input
         className="appInput"
         type="text"
-        placeholder="agregar tarea"
+        placeholder="Nueva tarea"
         value={inputValue}
         onChange={onInputChange}
       />

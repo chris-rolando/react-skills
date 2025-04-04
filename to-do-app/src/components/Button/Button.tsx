@@ -1,39 +1,16 @@
-import React, { useState, ChangeEvent, FormEvent } from "react";
-import "../styles/Input.css";
-
-/*
- * Uso:     renderizar caja de texto
- * Recibe:
- * Retorna: <form>
- */
-
-interface AddTaskProps {
-  addTask: (task: string) => void;
+interface ButtonProps {
+  textoButton: string;
+  eventClic: () => void;
 }
 
-export const AddTask = ({ addTask }: AddTaskProps) => {
-  const [inputValue, setInputValue] = useState<string>("");
-
-  const onInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setInputValue(event.target.value);
-  };
-
-  const onSubmit = (event: FormEvent) => {
-    event.preventDefault();
-    addTask(inputValue);
-    console.log(inputValue);
-    setInputValue("");
-  };
-
+export const Button = ({ textoButton, eventClic }: ButtonProps) => {
   return (
-    <form onSubmit={onSubmit}>
-      <input
-        className="appInput"
-        type="text"
-        placeholder="Nueva tarea"
-        value={inputValue}
-        onChange={onInputChange}
-      />
-    </form>
+    <button className="boton-1" onClick={eventClic}>
+      {textoButton}
+    </button>
   );
+};
+
+Button.defaultProps = {
+  textoButton: "Botón"
 };
