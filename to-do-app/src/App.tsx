@@ -6,9 +6,13 @@ export const App = () =>{
   
   return (
     <>
+    {/* titulo del proyecto */}
       <header className="App-header">
       <Title text="Lista de tareas"/>
       </header>
+    
+
+
     </>
   )
 }
